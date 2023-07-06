@@ -4,11 +4,9 @@ A 61-key keyboard.
 
 ## Layout
 
-📄 [layout/keyboard-layout.png](layout/keyboard-layout.png) (rev.6)
+📄 [layout/keyboard-layout.png](layout/keyboard-layout.png) (v0.1.0)
 
 ![keyboard layout](layout/keyboard-layout.png)
-
-- 12 function keys (F1 - F12)
 
 **RAW data for Keyboard Layout Editor v0.15:**
 
