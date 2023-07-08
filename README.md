@@ -21,3 +21,10 @@ A 61-key (5-octave) keyboard.
 ```
 
 - 🔗 [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/)
+
+## BOM
+
+| Material | Note | JLCPCB Part # |
+|-|-|-|
+| RP2040 | MCU, Raspberry Pi | C2040 |
+| W25Q64JVXGIQ | 64M-bit Serial Flash, Winbond Electronics | C2940195 |
