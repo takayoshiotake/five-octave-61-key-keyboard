@@ -1,6 +1,6 @@
-# (noname)
+# Five Octave
 
-A 61-key keyboard.
+A 61-key (5-octave) keyboard.
 
 ## Layout
 
