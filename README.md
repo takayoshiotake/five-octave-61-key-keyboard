@@ -28,3 +28,5 @@ A 61-key (5-octave) keyboard.
 |-|-|-|
 | RP2040 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
 | W25Q64JVXGIQ | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+
+- 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
