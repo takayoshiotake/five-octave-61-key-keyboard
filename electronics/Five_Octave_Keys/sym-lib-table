@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "Project_Library")(type "KiCad")(uri "/Users/takayoshi/Desktop/five-octave-61-key-keyboard/electronics/Project_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "Project_Library")(type "KiCad")(uri "${KIPRJMOD}/../Project_Library.kicad_sym")(options "")(descr ""))
 )
