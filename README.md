@@ -26,16 +26,17 @@ A 61-key (5-octave) keyboard.
 
 ### Five Octave CPU Board
 
-| Material | QTY | Note | JLCPCB Part # |
-|-|-:|-|-|
-| RP2040 | 1 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
-| W25Q64JVXGIQ | 1 | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+| Material | Symbol | QTY | Note | JLCPCB Part # |
+|-|-|-:|-|-|
+| RP2040 | | 1 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
+| W25Q64JVXGIQ | | 1 | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
 
 ### Five Octave Keys Board
 
-| Material | QTY | Note | JLCPCB Part # |
-|-|-:|-|-|
-| 1N4148WS | 61 | D1-61 | [C2128](https://jlcpcb.com/partdetail/2485-1N4148WS/C2128) |
+| Material | Symbol | QTY | Note | JLCPCB Part # |
+|-|-|-:|-|-|
+| 1N4148WS | D1-61 | 61 | | [C2128](https://jlcpcb.com/partdetail/2485-1N4148WS/C2128) |
+| AFC01-S16FCC-00 | | 1 | JUSHUO FFC Connector (0.50mm pitch, 16 circuits) | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
 
