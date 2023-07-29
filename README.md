@@ -4,13 +4,13 @@ A 61-key (5-octave) keyboard.
 
 ## Layout
 
-📄 [layout/keyboard-layout.png](layout/keyboard-layout.png) (v0.1.1)
+📄 [keyboard-layout.png](layout/keyboard-layout.png) (v0.1.1)
 
 ![keyboard layout](layout/keyboard-layout.png)
 
 **RAW data for Keyboard Layout Editor v0.15:**
 
-📄 [layout/keyboard-layout.rawdata.json](layout/keyboard-layout.rawdata.json)
+📄 [keyboard-layout.rawdata.json](layout/keyboard-layout.rawdata.json)
 
 ```json
 [{"a":4,"f":3},"Esc","!\n1","@\n2","#\n3","$\n4","%\n5","^\n6","&\n7","*\n8","(\n9",")\n0","_\n-","+\n=","|\n\\","~\n`"],
@@ -24,9 +24,27 @@ A 61-key (5-octave) keyboard.
 
 ## BOM
 
-| Material | Note | JLCPCB Part # |
-|-|-|-|
-| RP2040 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
-| W25Q64JVXGIQ | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+### Five Octave CPU Board
+
+| Material | QTY | Note | JLCPCB Part # |
+|-|-:|-|-|
+| RP2040 | 1 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
+| W25Q64JVXGIQ | 1 | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+
+### Five Octave Keys Board
+
+| Material | QTY | Note | JLCPCB Part # |
+|-|-:|-|-|
+| 1N4148WS | 61 | D1-61 | [C2128](https://jlcpcb.com/partdetail/2485-1N4148WS/C2128) |
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
+
+## Schematic
+
+### Five Octave Keys Board
+
+📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.0.0)
+
+📄 [Five_Octave_Keys.svg](electronics/Five_Octave_Keys/Five_Octave_Keys.svg)
+
+![schematic svg](electronics/Five_Octave_Keys/Five_Octave_Keys.svg)
