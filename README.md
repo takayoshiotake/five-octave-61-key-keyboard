@@ -44,7 +44,7 @@ A 61-key (5-octave) keyboard.
 
 ### Five Octave Keys Board
 
-📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.2.0)
+📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.3.0)
 
 📄 [Five_Octave_Keys.svg](electronics/Five_Octave_Keys/Five_Octave_Keys.svg)
 
@@ -56,7 +56,7 @@ A 61-key (5-octave) keyboard.
 |----|-------|------|-----|-----|----|-------|--------|-------|
 | R0 | Esc   | 1    | 2   | 3   | 4  | 5     | 6      |       |
 | R1 | Tab   |      | Q   | W   | E  | R     | T      |       |
-| R2 | Caps  | A    | Z   | S   | X  | D     | F      | G     | 
+| R2 | Caps  | A    | Z   | X   | S  | D     | F      | G     | 
 | R3 | Shift | Ctrl | Opt | Cmd | C  | V     | B      | Space |
 | R4 | 7     | 8    | 9   | 0   | -  | =     | \      | `     |
 | R5 | Y     | U    | I   | O   | P  | [     | ]      | BS    |
