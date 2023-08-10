@@ -36,7 +36,8 @@ A 61-key (5-octave) keyboard.
 | Material | Symbol | QTY | Note | JLCPCB Part # |
 |-|-|-:|-|-|
 | 1N4148WS | D1-61 | 61 | | [C2128](https://jlcpcb.com/partdetail/2485-1N4148WS/C2128) |
-| AFC01-S16FCC-00 | | 1 | JUSHUO FFC Connector (0.50mm pitch, 16 circuits) | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
+| CPG151101S11-16 | SW1-61 | 61 | Kailh How Swap Socket | [C5156480](https://jlcpcb.com/partdetail/Kailh-CPG151101S1116/C5156480) | 
+| AFC01-S16FCC-00 | J1 | 1 | JUSHUO FFC Connector (0.50mm pitch, 16 circuits) | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
 
@@ -44,7 +45,7 @@ A 61-key (5-octave) keyboard.
 
 ### Five Octave Keys Board
 
-📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.4.0)
+📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.4.1)
 
 📄 [Five_Octave_Keys.svg](electronics/Five_Octave_Keys/Five_Octave_Keys.svg)
 
