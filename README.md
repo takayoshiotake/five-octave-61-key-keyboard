@@ -24,7 +24,7 @@ A 61-key (5-octave) keyboard.
 
 ## BOM
 
-### Five Octave CPU Board
+### Five Octave MCU Board
 
 | Material | Symbol | QTY | Note | JLCPCB Part # |
 |-|-|-:|-|-|
