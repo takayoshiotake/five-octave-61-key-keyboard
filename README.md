@@ -28,16 +28,22 @@ A 61-key (5-octave) keyboard.
 
 | Material | Symbol | QTY | Note | JLCPCB Part # |
 |-|-|-:|-|-|
-| RP2040 | | 1 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
-| W25Q64JVXGIQ | | 1 | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+| HRO_TYPE-C-31-M-12 | J1 | 1 | USB Type-C Connector, Korean Hroparts Elec | [C165948](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948) |
+| AFC01-S16FCC-00 | J2 | 1 | FFC Connector 0.50mm pitch 16 circuits, JUSHUO | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
+| WS2812C-2020-V1 | LED1 | 1 | NeoPixel RGB LED 2x2mm, Worldsemi | [C2976072](https://jlcpcb.com/partdetail/Worldsemi-WS2812C_2020V1/C2976072) |
+| SKRPANE010 | SW1, SW2 | 2 | Tactile Switch, ALPS ALPINE | [C470426](https://jlcpcb.com/partdetail/Alpsalpine-SKRPANE010/C470426) |
+| RP2040 | U1 | 1 | MCU, Raspberry Pi | [C2040](https://jlcpcb.com/partdetail/RaspberryPi-RP2040/C2040) |
+| W25Q64JVXGIQ | U2 | 1 | 64M-bit Serial Flash, Winbond Electronics | [C2940195](https://jlcpcb.com/partdetail/WinbondElec-W25Q64JVXGIQ/C2940195) |
+| AP2112K-3.3TRG1 | U3 | 1 | 3.3V Linear Voltage Regulators | [C51118](https://jlcpcb.com/partdetail/DiodesIncorporated-AP2112K_33TRG1/C51118) |
+| X322512MSB4SI | Y1 | 1 | 12MHz 20pF Crystal Resonator, SMD-3225, Yangxing Tech | [C9002](https://jlcpcb.com/partdetail/YangxingTech-X322512MSB4SI/C9002) | 
 
 ### Five Octave Keys Board
 
 | Material | Symbol | QTY | Note | JLCPCB Part # |
 |-|-|-:|-|-|
 | 1N4148WS | D1-61 | 61 | | [C2128](https://jlcpcb.com/partdetail/2485-1N4148WS/C2128) |
-| CPG151101S11-16 | SW1-61 | 61 | Kailh How Swap Socket | [C5156480](https://jlcpcb.com/partdetail/Kailh-CPG151101S1116/C5156480) | 
-| AFC01-S16FCC-00 | J1 | 1 | JUSHUO FFC Connector (0.50mm pitch, 16 circuits) | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
+| CPG151101S11-16 | SW1-61 | 61 | How Swap Socket, Kailh | [C5156480](https://jlcpcb.com/partdetail/Kailh-CPG151101S1116/C5156480) | 
+| AFC01-S16FCC-00 | J1 | 1 | FFC Connector 0.50mm pitch 16 circuits, JUSHUO | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
 
