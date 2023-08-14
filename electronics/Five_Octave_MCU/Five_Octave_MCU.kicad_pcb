@@ -8,7 +8,7 @@
   (title_block
     (title "Five Octave - MCU")
     (date "2023-08-14")
-    (rev "1.0.0-wip.1")
+    (rev "1.0.0-wip.2")
     (comment 1 "https://github.com/takayoshiotake/five-octave-61-key-keyboard")
   )
 
@@ -1635,7 +1635,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tstamp ca310d9b-98d1-43ab-a5dc-121f9d5ae7be)
-    (at 38.030001 34.0925 180)
+    (at 38.03 34.0925 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "LCSC" "C25905")
@@ -2301,7 +2301,7 @@
   (segment (start 39.63 49.715) (end 39.63 50.494999) (width 0.2) (layer "F.Cu") (net 2) (tstamp a8be7a99-cd1f-4de7-9b43-1b19ace1ec03))
   (segment (start 39.25 35.085) (end 39.25 34.464999) (width 0.2) (layer "F.Cu") (net 2) (tstamp b6c0612c-e355-4df0-bc6b-daf532639b68))
   (segment (start 39.25 34.464999) (end 39.409999 34.305) (width 0.2) (layer "F.Cu") (net 2) (tstamp be402dc1-cd50-468b-9e63-3e3a367f954b))
-  (segment (start 37.520001 34.0925) (end 36.75 34.0925) (width 0.2) (layer "F.Cu") (net 2) (tstamp d75800c9-24c6-431e-bdc5-c7f2f4963ac6))
+  (segment (start 37.52 34.0925) (end 36.75 34.0925) (width 0.2) (layer "F.Cu") (net 2) (tstamp d75800c9-24c6-431e-bdc5-c7f2f4963ac6))
   (segment (start 31.935 43.8) (end 32.715 43.8) (width 0.2) (layer "F.Cu") (net 2) (tstamp dfef49a0-43ea-4fe9-a09e-72e9ec26335e))
   (segment (start 32.06 49.275) (end 32.06 50.124999) (width 0.2) (layer "F.Cu") (net 2) (tstamp e119cad3-1edf-4b06-9e52-0ef0d214ce27))
   (segment (start 43.25 36.065) (end 43.25 35.285) (width 0.2) (layer "F.Cu") (net 2) (tstamp e127b9f5-e93c-4629-ad92-bdfd7689f12f))
