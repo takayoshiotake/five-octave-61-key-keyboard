@@ -24,6 +24,12 @@ A 61-key (5-octave) keyboard.
 
 ## BOM
 
+| Material | QTY | Note |
+|-|-:|-|
+| Five Octave MCU Board | 1 | |
+| Five Octave Keys Board | 1 | |
+| 0151660170 | 1 | Molex 0.50mm pitch FFC, Type D, 127.00mm, 16 circuits |
+
 ### Five Octave MCU Board
 
 | Material | Symbol | QTY | Note | JLCPCB Part # |
@@ -57,7 +63,7 @@ A 61-key (5-octave) keyboard.
 
 ## Schematic
 
-### Five Octave MCU Board
+### Five Octave MCU
 
 📄 [Five_Octave_MCU.kicad_sch](electronics/Five_Octave_MCU/Five_Octave_MCU.kicad_sch) (v1.0.0-wip.1)
 
@@ -65,7 +71,7 @@ A 61-key (5-octave) keyboard.
 
 ![schematic svg](electronics/Five_Octave_MCU/Five_Octave_MCU.svg)
 
-### Five Octave Keys Board
+### Five Octave Keys
 
 📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v0.4.1)
 
