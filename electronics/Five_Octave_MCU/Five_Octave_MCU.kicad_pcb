@@ -8,7 +8,7 @@
   (title_block
     (title "Five Octave - MCU")
     (date "2023-08-14")
-    (rev "1.0.0-wip.3")
+    (rev "1.0.0-wip.4")
     (comment 1 "https://github.com/takayoshiotake/five-octave-61-key-keyboard")
   )
 
@@ -2235,7 +2235,7 @@
     (stroke (width 0.2) (type default)) (layer "F.Fab") (tstamp d63761e3-8d8f-4f6b-a189-25d070bdc589))
   (gr_line (start 40.43 46.0375) (end 40.43 47.815)
     (stroke (width 0.2) (type default)) (layer "F.Fab") (tstamp ed52313f-aae1-4e39-855c-0e3ebbeef35c))
-  (gr_text "0.1.0" (at 26.1095 38.896643 90) (layer "F.SilkS") (tstamp 35989ce2-c827-451f-9006-467a144050ad)
+  (gr_text "1.0.0" (at 26.1095 38.896643 90) (layer "F.SilkS") (tstamp 35989ce2-c827-451f-9006-467a144050ad)
     (effects (font (size 1 1) (thickness 0.15)) (justify left top))
   )
   (gr_text "R" (at 41.7 52.4895 90) (layer "F.SilkS") (tstamp 40e9b7da-6cc1-44ab-8b24-c3d80e1b097e)
