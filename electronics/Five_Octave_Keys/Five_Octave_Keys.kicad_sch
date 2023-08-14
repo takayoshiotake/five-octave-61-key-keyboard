@@ -6,8 +6,8 @@
 
   (title_block
     (title "Five Octave - Keys")
-    (date "2023-08-10")
-    (rev "0.4.1")
+    (date "2023-08-14")
+    (rev "1.0.0")
     (comment 1 "https://github.com/takayoshiotake/five-octave-61-key-keyboard")
   )
 
