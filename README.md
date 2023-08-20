@@ -65,7 +65,7 @@ A 61-key (5-octave) keyboard.
 
 ### Five Octave MCU
 
-📄 [Five_Octave_MCU.kicad_sch](electronics/Five_Octave_MCU/Five_Octave_MCU.kicad_sch) (v1.0.0-wip.1)
+📄 [Five_Octave_MCU.kicad_sch](electronics/Five_Octave_MCU/Five_Octave_MCU.kicad_sch) (v1.0.0)
 
 📄 [Five_Octave_MCU.svg](electronics/Five_Octave_MCU/Five_Octave_MCU.svg)
 
@@ -91,3 +91,9 @@ A 61-key (5-octave) keyboard.
 | R5 | Y     | U    | I   | O   | P     | [     | ]      | BS    |
 | R6 | H     | J    | K   | L   | ;     | '     | Return | Fn    |
 | R7 | N     | M    | ,   | .   | /     | Shift | Cmd    | MO(1) | 
+
+## Mechanics
+
+📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.1)
+
+![enclosure png](mechanics/Five_Octave_Enclosure.png)
