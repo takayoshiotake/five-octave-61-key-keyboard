@@ -9066,7 +9066,7 @@
     (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") (tstamp c97402c0-fe90-40f6-a4ca-28d624cb94c1))
   (gr_rect locked (start 266.7 104.775) (end 290.5125 123.825)
     (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") (tstamp f34cb975-ccc7-4d1e-8133-5603af9c7d01))
-  (gr_text locked "1.0.0+20230814" (at 205.91625 107.825) (layer "F.SilkS") (tstamp 822cbb58-9222-4fde-92e4-e6872d3a8cca)
+  (gr_text locked "1.0.0+20230821" (at 205.91625 107.825) (layer "F.SilkS") (tstamp 822cbb58-9222-4fde-92e4-e6872d3a8cca)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text locked "JLCJLCJLCJLC" (at 205.91625 109.825) (layer "F.SilkS") (tstamp 8a2b0005-3d97-41d9-8ad2-3227ea988e30)
