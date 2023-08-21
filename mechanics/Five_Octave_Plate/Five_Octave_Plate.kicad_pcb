@@ -7,8 +7,8 @@
   (paper "A3")
   (title_block
     (title "Five Octave - Plate")
-    (date "2023-08-15")
-    (rev "1.0.0-wip.3")
+    (date "2023-08-21")
+    (rev "1.0.0")
     (comment 1 "https://github.com/takayoshiotake/five-octave-61-key-keyboard")
   )
 
@@ -611,7 +611,7 @@
     )
 
     (stroke (width 0.1) (type solid)) (fill none) (layer "User.3") (tstamp d90e0f7e-d122-49a0-88e8-f177e06740dd))
-  (gr_text "1.0.0+20230815" (at 177.59375 109.8) (layer "F.SilkS") (tstamp 4318d4bf-6ed1-4565-a6cc-310c93e7765a)
+  (gr_text "1.0.0+20230821" (at 177.59375 109.8) (layer "F.SilkS") (tstamp 4318d4bf-6ed1-4565-a6cc-310c93e7765a)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text "Five Octave Plate" (at 177.59375 107.8) (layer "F.SilkS") (tstamp 6dc3616a-758b-4a4d-b495-7a6fe862a6e8)
