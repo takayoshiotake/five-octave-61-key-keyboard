@@ -3156,7 +3156,7 @@
     (property "Value" "AP2112K-3.3" (at 37.465 81.28 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 37.465 79.375 0)
+    (property "Footprint" "Project_Library:SOT-23-5" (at 37.465 79.375 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf" (at 37.465 85.09 0)
