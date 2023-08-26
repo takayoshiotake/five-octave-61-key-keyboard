@@ -61,11 +61,13 @@ A 61-key (5-octave) keyboard.
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
 
-## Schematic
+## Schematic and PCB
 
 ### Five Octave MCU
 
 📄 [Five_Octave_MCU.kicad_sch](electronics/Five_Octave_MCU/Five_Octave_MCU.kicad_sch) (v1.0.0)
+
+📄 [Five_Octave_MCU.kicad_pcb](electronics/Five_Octave_MCU/Five_Octave_MCU.kicad_pcb) (v1.0.0)
 
 📄 [Five_Octave_MCU.svg](electronics/Five_Octave_MCU/Five_Octave_MCU.svg)
 
@@ -74,6 +76,8 @@ A 61-key (5-octave) keyboard.
 ### Five Octave Keys
 
 📄 [Five_Octave_Keys.kicad_sch](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_sch) (v1.0.0)
+
+📄 [Five_Octave_Keys.kicad_pcb](electronics/Five_Octave_Keys/Five_Octave_Keys.kicad_pcb) (v1.0.0)
 
 📄 [Five_Octave_Keys.svg](electronics/Five_Octave_Keys/Five_Octave_Keys.svg)
 
@@ -94,7 +98,13 @@ A 61-key (5-octave) keyboard.
 
 ## Mechanics
 
+### Enclosure and Weight
+
 📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.3)
 
 ![enclosure png 001](mechanics/Five_Octave_Enclosure-001.png)
 ![enclosure png 002](mechanics/Five_Octave_Enclosure-002.png)
+
+### Plate
+
+📄 [Five_Octave_Plate.kicad_pcb](electronics/Five_Octave_Plate/Five_Octave_Plate.kicad_pcb) (v1.0.0)
