@@ -94,6 +94,7 @@ A 61-key (5-octave) keyboard.
 
 ## Mechanics
 
-📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.2)
+📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.3)
 
-![enclosure png](mechanics/Five_Octave_Enclosure.png)
+![enclosure png 001](mechanics/Five_Octave_Enclosure-001.png)
+![enclosure png 002](mechanics/Five_Octave_Enclosure-002.png)
