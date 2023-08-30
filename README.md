@@ -28,7 +28,9 @@ A 61-key (5-octave) keyboard.
 |-|-:|-|
 | Five Octave MCU Board | 1 | |
 | Five Octave Keys Board | 1 | |
-| 0151660170 | 1 | Molex 0.50mm pitch FFC, Type D, 127.00mm, 16 circuits |
+| 0151660169 | 1 | Molex 0.50mm pitch FFC, Type A, 127.00mm, 16 circuits |
+
+- 🔗 [Molex Connector Part Number - 15166-0169 | Molex](https://www.molex.com/en-us/products/part-detail/151660169)
 
 ### Five Octave MCU Board
 
