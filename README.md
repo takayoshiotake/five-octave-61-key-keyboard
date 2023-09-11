@@ -102,7 +102,7 @@ A 61-key (5-octave) keyboard.
 
 ### Enclosure and Weight
 
-📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.5)
+📄 [Five_Octave_Enclosure.png](mechanics/Five_Octave_Enclosure.png) (wip.6)
 
 ![enclosure png 001](mechanics/Five_Octave_Enclosure-001.png)
 ![enclosure png 002](mechanics/Five_Octave_Enclosure-002.png)
