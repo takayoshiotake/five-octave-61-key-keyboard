@@ -1,12 +1,13 @@
 import storage
 
-from octave_pcb.key_matrix import KeyMatrix
+import board
+import digitalio
 
-# key_matrix = KeyMatrix()
-# are_keys_pressed = key_matrix.scan_matrix()
-# key_matrix.deinit()
-# is_usb_drive_enabled = are_keys_pressed[11]
-is_usb_drive_enabled = True
+esc_row_io = digitalio.DigitalInOut(board.GPIO29)
+esc_row_io.switch_to_output(False, digitalio.DriveMode.OPEN_DRAIN)
+esc_col_io = digitalio.DigitalInOut(board.GPIO21)
+esc_col_io.switch_to_input(digitalio.Pull.UP)
+is_usb_drive_enabled = esc_col_io.value == False
 
 if is_usb_drive_enabled:
   storage.remount("/", readonly=False)

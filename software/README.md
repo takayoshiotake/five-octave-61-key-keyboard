@@ -34,6 +34,8 @@ Alternatively:
 % cp -r octave_pcb /Volumes/OCTAVE_CP/
 ```
 
+MEMO: After uploading boot.py, you will need to hold down SW1 during boot to mount it as a USB drive.
+
 ## Note
 
 🔗 <https://learn.adafruit.com/circuitpython-essentials/circuitpython-resetting>

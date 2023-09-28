@@ -45,7 +45,7 @@ if __name__ == '__main__':
   cpu_pixpower.switch_to_output(True, digitalio.DriveMode.PUSH_PULL)
 
   # Sleep for a bit to avoid a race condition on some systems
-  time.sleep(1)
+  time.sleep(2)
 
   while True:
     try:
