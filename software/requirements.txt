@@ -1,0 +1,2 @@
+Found device at /Volumes/OCTAVE_CP, running CircuitPython 8.2.6.
+adafruit_hid==6.0.1
