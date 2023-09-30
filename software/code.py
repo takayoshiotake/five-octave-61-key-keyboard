@@ -62,8 +62,8 @@ KEY_MAP_LAYERS = [
         # ROW3
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_SHIFT),
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_CONTROL),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.OPTION),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.COMMAND),  # left_command
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ALT),  # left_option
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_GUI),  # left_command
         KeyAssignment(CodeType.KEYBOARD, Keycode.SPACE),
         KeyAssignment(CodeType.KEYBOARD, Keycode.C),
         KeyAssignment(CodeType.KEYBOARD, Keycode.V),
@@ -103,7 +103,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.FORWARD_SLASH),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_SHIFT),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_GUI),  # right_command
-        None,
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ALT),  # right_option (tentative)
     ],
 ]
 
