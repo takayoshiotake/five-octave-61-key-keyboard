@@ -110,3 +110,21 @@ A 61-key (5-octave) keyboard.
 ### Plate
 
 📄 [Five_Octave_Plate.kicad_pcb](electronics/Five_Octave_Plate/Five_Octave_Plate.kicad_pcb) (v1.0.0)
+
+## Software
+
+### CircuitPython
+
+Software for the Five Octave runs on CircuitPython.
+Its CircuitPython is the same as the one for Octave (<https://github.com/takayoshiotake/octave-12-key-macropad>).
+
+- Built UF2
+    - 🔗 <https://adafruit-circuit-python.s3.amazonaws.com/index.html?prefix=bin/takayoshiotake_octave_rp2040/>
+    - 📄 [adafruit-circuitpython-takayoshiotake_octave_rp2040-en_US-8.2.6.uf2](circuitpython-bin/adafruit-circuitpython-takayoshiotake_octave_rp2040-en_US-8.2.6.uf2)
+- Code
+    - 🔗 [adafruit/circuitpython](https://github.com/adafruit/circuitpython)
+        - 🔗 <https://github.com/adafruit/circuitpython/tree/main/ports/raspberrypi/boards/takayoshiotake_octave_rp2040>
+
+### Application Software
+
+See [software/README.md](software/README.md) for more details.
