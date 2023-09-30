@@ -32,7 +32,78 @@ SCAN_KEY_MATRIX_INTERVAL = 0.01
 
 KEY_MAP_LAYERS = [
     [
+        # ROW0
         KeyAssignment(CodeType.KEYBOARD, Keycode.ESCAPE),
+        None,
+        KeyAssignment(CodeType.KEYBOARD, Keycode.ONE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.TWO),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.THREE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FOUR),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FIVE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SIX),
+        # ROW1
+        KeyAssignment(CodeType.KEYBOARD, Keycode.TAB),
+        None,
+        None,
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Q),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.W),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.E),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.R),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.T),
+        # ROW2
+        KeyAssignment(CodeType.KEYBOARD, Keycode.CAPS_LOCK),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Z),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.X),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.A),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.S),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.D),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.G),
+        # ROW3
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_SHIFT),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_CONTROL),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.OPTION),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.COMMAND),  # left_command
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SPACE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.C),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.V),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.B),
+        # ROW4
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SEVEN),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.EIGHT),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.NINE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.ZERO),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.MINUS),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.EQUALS),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSLASH),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.GRAVE_ACCENT),
+        # ROW5
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Y),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.U),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.I),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.O),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.P),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_BRACKET),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_BRACKET),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSPACE),
+        # ROW6
+        KeyAssignment(CodeType.KEYBOARD, Keycode.H),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.J),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.K),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.L),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SEMICOLON),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.QUOTE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RETURN),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.APPLICATION),
+        # ROW7
+        KeyAssignment(CodeType.KEYBOARD, Keycode.N),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.M),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.COMMA),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.PERIOD),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FORWARD_SLASH),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_SHIFT),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_GUI),  # right_command
+        None,
     ],
 ]
 
