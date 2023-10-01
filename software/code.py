@@ -23,6 +23,18 @@ class CodeType:
   LAYER_MOMENTRY = 4
 
 
+class KeycodeJp:
+  JAPANESE_KANA = 0x90  # LANG1
+  JAPANESE_EISUU = 0x91  # LANG2
+
+
+ComplexModifierAssignment = collections.namedtuple('ComplexModifierAssignment', ['modifier', 'code_for_standalone'])
+"""
+1) If you release the key before it becomes a long press, send the standalone code.
+2) When a key becomes a long press, or just before another KeyAssignment becomes press,
+    the modifier becomes press.
+"""
+
 KeyAssignment = collections.namedtuple('KeyAssignment', ['type', 'code'])
 LambdaAssignment = collections.namedtuple('LambdaAssignment', ['on_press', 'on_release'])
 
@@ -63,7 +75,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_SHIFT),
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_CONTROL),
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ALT),  # left_option
-        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_GUI),  # left_command
+        ComplexModifierAssignment(Keycode.LEFT_GUI, KeycodeJp.JAPANESE_EISUU),  # left_command
         KeyAssignment(CodeType.KEYBOARD, Keycode.SPACE),
         KeyAssignment(CodeType.KEYBOARD, Keycode.C),
         KeyAssignment(CodeType.KEYBOARD, Keycode.V),
@@ -102,10 +114,15 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.PERIOD),
         KeyAssignment(CodeType.KEYBOARD, Keycode.FORWARD_SLASH),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_SHIFT),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_GUI),  # right_command
-        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ALT),  # right_option (tentative)
+        ComplexModifierAssignment(Keycode.RIGHT_GUI, KeycodeJp.JAPANESE_KANA),  # right_command
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ALT),  # right_option (tentative))
     ],
 ]
+
+
+class ComplexModifierStatus:
+  def __init__(self):
+    self.is_still_standalone = True
 
 
 if __name__ == '__main__':
@@ -125,8 +142,10 @@ if __name__ == '__main__':
       mouse = Mouse(usb_hid.devices)
       consumer_control = ConsumerControl(usb_hid.devices)
 
+      key_events = [None for _ in range(len(key_event_planners))]
       key_map_layer = 0
       pressed_keys = [None for _ in range(len(key_event_planners))]
+      complex_modifier_status_list = [None for _ in range(len(key_event_planners))]
 
       scan_key_matrix_timing = time.monotonic()  # For debounce
       while True:
@@ -135,14 +154,30 @@ if __name__ == '__main__':
         if current_time >= scan_key_matrix_timing:
           are_keys_pressed = key_matrix.scan_matrix()
           for i, key_event_planner in enumerate(key_event_planners):
-            key_event = key_event_planner.make_event(
+            key_events[i] = key_event_planner.make_event(
                 current_time, are_keys_pressed[i])
+
+          # Check whether to stop standalone of complex modifiers
+          stop_standalone_of_complex_modifiers = False
+          for i, key_event in enumerate(key_events):
+            if key_event == KeyEvent.PRESS:
+              if isinstance(KEY_MAP_LAYERS[key_map_layer][i], KeyAssignment):
+                stop_standalone_of_complex_modifiers = True
+          if stop_standalone_of_complex_modifiers:
+            for i in range(len(complex_modifier_status_list)):
+              if complex_modifier_status_list[i] is not None and complex_modifier_status_list[i].is_still_standalone:
+                complex_modifier_status_list[i].is_still_standalone = False
+                keyboard.press(pressed_keys[i].modifier)
+
+          for i, key_event in enumerate(key_events):
             if key_event == KeyEvent.PRESS:
               # print(f"""pressed : {i}""")
               pressed_keys[i] = KEY_MAP_LAYERS[key_map_layer][i]
               key_assignment = pressed_keys[i]
               if key_assignment is None:
                 pass
+              elif isinstance(key_assignment, ComplexModifierAssignment):
+                complex_modifier_status_list[i] = ComplexModifierStatus()
               elif isinstance(key_assignment, KeyAssignment):
                 if key_assignment.type == CodeType.LAYER_MOMENTRY:
                   key_map_layer = 1
@@ -161,6 +196,10 @@ if __name__ == '__main__':
               key_assignment = pressed_keys[i]
               if key_assignment is None:
                 pass
+              elif isinstance(key_assignment, ComplexModifierAssignment):
+                if complex_modifier_status_list[i].is_still_standalone:
+                  complex_modifier_status_list[i].is_still_standalone = False
+                  keyboard.press(key_assignment.modifier)
               elif isinstance(key_assignment, KeyAssignment):
                 if key_assignment.type == CodeType.LAYER_MOMENTRY:
                   pass
@@ -176,6 +215,14 @@ if __name__ == '__main__':
               pressed_keys[i] = None
               if key_assignment is None:
                 pass
+              elif isinstance(key_assignment, ComplexModifierAssignment):
+                complex_modifier_status = complex_modifier_status_list[i]
+                if complex_modifier_status.is_still_standalone:
+                  keyboard.press(key_assignment.code_for_standalone)
+                  keyboard.release(key_assignment.code_for_standalone)
+                else:
+                  keyboard.release(key_assignment.modifier)
+                complex_modifier_status_list[i] = None
               elif isinstance(key_assignment, KeyAssignment):
                 if key_assignment.type == CodeType.LAYER_MOMENTRY:
                   key_map_layer = 0
@@ -187,6 +234,7 @@ if __name__ == '__main__':
                   consumer_control.release()
               elif isinstance(key_assignment, LambdaAssignment) and key_assignment.on_release is not None:
                 key_assignment.on_release()
+
           scan_key_matrix_timing += SCAN_KEY_MATRIX_INTERVAL
           if scan_key_matrix_timing <= current_time:
             scan_key_matrix_timing = current_time + SCAN_KEY_MATRIX_INTERVAL
