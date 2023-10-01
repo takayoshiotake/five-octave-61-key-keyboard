@@ -42,5 +42,5 @@ class KeyMatrix:
       are_keys_pressed.extend(
           [True if col_io.value == DIGITALIO_LOW else False for col_io in self.col_ios]
       )
-      time.sleep(0.001)
+      # time.sleep(0.001)
     return are_keys_pressed
