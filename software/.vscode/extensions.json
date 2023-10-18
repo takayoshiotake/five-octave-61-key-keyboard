@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "joedevivo.vscode-circuitpython",
+        "ms-python.autopep8",
+        "ms-python.python"
+    ]
+}
