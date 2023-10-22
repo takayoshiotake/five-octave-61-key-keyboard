@@ -46,7 +46,7 @@ KeyAssignment = collections.namedtuple('KeyAssignment', ['type', 'code'])
 LambdaAssignment = collections.namedtuple('LambdaAssignment', ['on_press', 'on_release'])
 
 
-SCAN_KEY_MATRIX_INTERVAL = 0.01
+SCAN_KEY_MATRIX_INTERVAL = 0.02
 
 
 KEY_MAP_LAYERS = [
