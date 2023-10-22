@@ -29,10 +29,11 @@ class KeycodeJp:
 
 class KeycodeLayer:
   MO1 = 0xFF01
+  MO2 = 0xFF02
 
 
 def is_code_mo(code):
-  return True if code == KeycodeLayer.MO1 else False
+  return True if code == KeycodeLayer.MO1 or code == KeycodeLayer.MO2 else False
 
 
 ComplexModifierAssignment = collections.namedtuple('ComplexModifierAssignment', ['modifier', 'code_for_standalone'])
@@ -70,7 +71,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.R),
         KeyAssignment(CodeType.KEYBOARD, Keycode.T),
         # ROW2
-        ComplexModifierAssignment(KeycodeLayer.MO1, KeycodeJp.JAPANESE_EISUU),
+        ComplexModifierAssignment(KeycodeLayer.MO1, KeycodeJp.JAPANESE_EISUU),  # CAPS_LOCK
         KeyAssignment(CodeType.KEYBOARD, Keycode.Z),
         KeyAssignment(CodeType.KEYBOARD, Keycode.X),
         KeyAssignment(CodeType.KEYBOARD, Keycode.A),
@@ -113,7 +114,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.SEMICOLON),
         KeyAssignment(CodeType.KEYBOARD, Keycode.QUOTE),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RETURN),
-        KeyAssignment(CodeType.KEYBOARD, KeycodeLayer.MO1),
+        KeyAssignment(CodeType.KEYBOARD, KeycodeLayer.MO2),
         # ROW7
         KeyAssignment(CodeType.KEYBOARD, Keycode.N),
         KeyAssignment(CodeType.KEYBOARD, Keycode.M),
@@ -144,7 +145,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.PAGE_UP),  # R
         KeyAssignment(CodeType.KEYBOARD, Keycode.T),
         # ROW2 (Layer1)
-        None,
+        None,  # MO(1)
         KeyAssignment(CodeType.KEYBOARD, Keycode.Z),
         KeyAssignment(CodeType.KEYBOARD, Keycode.X),
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ARROW),  # A
@@ -187,8 +188,82 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ARROW),  # SEMICOLON
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ARROW),  # QUOTE
         KeyAssignment(CodeType.KEYBOARD, Keycode.RETURN),
-        None,
+        None,  # MO(2)
         # ROW7 (Layer1)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.N),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.M),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.COMMA),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.PERIOD),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.DOWN_ARROW),  # FORWARD_SLASH
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_SHIFT),
+        ComplexModifierAssignment(Keycode.RIGHT_GUI, KeycodeJp.JAPANESE_KANA),  # right_command
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ALT),  # right_option (tentative))
+    ],
+    [
+        # ROW0 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.ESCAPE),
+        None,
+        KeyAssignment(CodeType.KEYBOARD, Keycode.ONE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.TWO),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.THREE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FOUR),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FIVE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SIX),
+        # ROW1 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.TAB),
+        None,
+        None,
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Q),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.W),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.E),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.R),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.T),
+        # ROW2 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.CAPS_LOCK),  # MO(1)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Z),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.X),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.A),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.S),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.D),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.G),
+        # ROW3 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_SHIFT),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_CONTROL),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ALT),  # left_option
+        ComplexModifierAssignment(Keycode.LEFT_GUI, KeycodeJp.JAPANESE_EISUU),  # left_command
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SPACE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.C),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.V),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.B),
+        # ROW4 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SEVEN),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.EIGHT),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.NINE),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.ZERO),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.MINUS),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.EQUALS),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSLASH),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.GRAVE_ACCENT),
+        # ROW5 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.Y),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.U),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.I),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.O),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.P),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.UP_ARROW),  # LEFT_BRACKET
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_BRACKET),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSPACE),
+        # ROW6 (Layer2)
+        KeyAssignment(CodeType.KEYBOARD, Keycode.H),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.J),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.K),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.L),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ARROW),  # SEMICOLON
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ARROW),  # QUOTE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.RETURN),
+        None,  # MO(2)
+        # ROW7 (Layer2)
         KeyAssignment(CodeType.KEYBOARD, Keycode.N),
         KeyAssignment(CodeType.KEYBOARD, Keycode.M),
         KeyAssignment(CodeType.KEYBOARD, Keycode.COMMA),
@@ -250,6 +325,8 @@ if __name__ == '__main__':
                 complex_modifier_status_list[i].is_still_standalone = False
                 if (pressed_keys[i].modifier == KeycodeLayer.MO1):
                   key_map_layer = 1
+                elif (pressed_keys[i].modifier == KeycodeLayer.MO2):
+                  key_map_layer = 2
                 else:
                   keyboard.press(pressed_keys[i].modifier)
 
@@ -266,6 +343,8 @@ if __name__ == '__main__':
                 if key_assignment.type == CodeType.KEYBOARD:
                   if (key_assignment.code == KeycodeLayer.MO1):
                     key_map_layer = 1
+                  elif (key_assignment.code == KeycodeLayer.MO2):
+                    key_map_layer = 2
                   else:
                     keyboard.press(key_assignment.code)
                 elif key_assignment.type == CodeType.MOUSE_MOVE:
@@ -286,6 +365,8 @@ if __name__ == '__main__':
                   complex_modifier_status_list[i].is_still_standalone = False
                   if (key_assignment.modifier == KeycodeLayer.MO1):
                     key_map_layer = 1
+                  elif (key_assignment.modifier == KeycodeLayer.MO2):
+                    key_map_layer = 2
                   else:
                     keyboard.press(key_assignment.modifier)
               elif isinstance(key_assignment, KeyAssignment):
