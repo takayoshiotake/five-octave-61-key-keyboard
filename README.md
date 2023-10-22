@@ -128,3 +128,7 @@ Its CircuitPython is the same as the one for Octave (<https://github.com/takayos
 ### Application Software
 
 See [software/README.md](software/README.md) for more details.
+
+## Gallery
+
+![](photos/overview.jpg)
