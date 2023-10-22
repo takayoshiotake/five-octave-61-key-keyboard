@@ -28,6 +28,7 @@ A 61-key (5-octave) keyboard.
 |-|-:|-|
 | Five Octave MCU Board | 1 | |
 | Five Octave Keys Board | 1 | |
+| Five Octave Enclosure | 1 | |
 | 0151660169 | 1 | Molex 0.50mm pitch FFC, Type A, 127.00mm, 16 circuits |
 
 - 🔗 [Molex Connector Part Number - 15166-0169 | Molex](https://www.molex.com/en-us/products/part-detail/151660169)
@@ -62,6 +63,18 @@ A 61-key (5-octave) keyboard.
 | AFC01-S16FCC-00 | J1 | 1 | FFC Connector 0.50mm pitch 16 circuits, JUSHUO | [C262272](https://jlcpcb.com/partdetail/Jushuo-AFC01_S16FCC00/C262272) |
 
 - 🔗 [JLCPCB | Assembly Parts Lib](https://jlcpcb.com/parts)
+
+### Five Octave Enclosure
+
+| Material | Symbol | QTY | Note |
+|-|-|-:|-|
+| Five Octave Enclosure - Case || 1 ||
+| Five Octave Enclosure - Top Frame || 1 | |
+| Screw M2 x 8mm || 4 | Secure Case and Top Frame |
+| Screw M2 x 5mm || 4 | Secure Case and Five Octave MCU |
+| Poron 1.5t 3mm x 120mm || 2 | For gasket mounting |
+| Poron 1.5t 3mm x 60mm || 6 | For gasket mounting |
+| Poron 1.5t 3mm x 40mm || 2 | For gasket mounting |
 
 ## Schematic and PCB
 
@@ -100,7 +113,7 @@ A 61-key (5-octave) keyboard.
 
 ## Mechanics
 
-### Enclosure and Weight
+### Five Octave Enclosure
 
 📄 [Five_Octave_Enclosure.FCStd](mechanics/Five_Octave_Enclosure.FCStd) (v1.0.0)
 
@@ -132,3 +145,5 @@ See [software/README.md](software/README.md) for more details.
 ## Gallery
 
 ![](photos/overview.jpg)
+
+MEMO: Alminum 6061 CNC + Bead blasting 120-mesh + Anodizing natural-matte by JLCPCB
