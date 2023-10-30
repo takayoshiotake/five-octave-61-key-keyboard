@@ -4,9 +4,25 @@ A 61-key (5-octave) keyboard.
 
 ## Layout
 
-📄 [keyboard-layout.png](layout/keyboard-layout.png) (v0.2.0)
+**Layer 0**:
+
+📄 [keyboard-layout.png](layout/keyboard-layout.png) (v0.3.0)
 
 ![keyboard layout](layout/keyboard-layout.png)
+
+MEMO: When pressed individually and released, it becomes the lower right keys (英数 and かな).
+
+**Layer 1**:
+
+📄 [keyboard-layout-1.png](layout/keyboard-layout-1.png)
+
+![keyboard layout 1](layout/keyboard-layout-1.png)
+
+**Layer 2**:
+
+📄 [keyboard-layout-2.png](layout/keyboard-layout-2.png)
+
+![keyboard layout 2](layout/keyboard-layout-2.png)
 
 MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using Karabiner to remap right_option to 'fn' and using it that way.
 
@@ -17,9 +33,29 @@ MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using 
 ```json
 [{"a":4,"f":3},"Esc","!\n1","@\n2","#\n3","$\n4","%\n5","^\n6","&\n7","*\n8","(\n9",")\n0","_\n-","+\n=","|\n\\","~\n`"],
 [{"w":1.5},"Tab","Q","W","E","R","T","Y","U","I","O","P","{\n[","}\n]",{"w":1.5},"BS"],
-[{"w":1.75},"MO(1)","A","S","D","F","G","H","J","K","L",":\n;","\"\n'",{"w":2.25},"Return"],
+[{"w":1.75},"MO(1)\n\n\n英数","A","S","D","F","G","H","J","K","L",":\n;","\"\n'",{"w":2.25},"Return"],
 [{"w":2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{"w":1.75},"Shift","MO(2)"],
-[{"w":1.25},"Ctrl",{"w":1.25},"Opt",{"w":1.25},"Cmd",{"a":7,"w":6.25},"6.25u",{"a":4},"Cmd","Opt"]
+[{"w":1.25},"Ctrl",{"w":1.25},"Opt",{"w":1.25},"Cmd\n\n\n英数",{"a":7,"w":6.25},"6.25u",{"a":4},"Cmd\n\n\nかな","Opt"]
+```
+
+📄 [keyboard-layout-1.rawdata.json](layout/keyboard-layout-1.rawdata.json)
+
+```json
+[{"a":4,"f":3},"Esc",{"c":"#aaccaa"},"F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12",{"c":"#cccccc"},"|\n\\","~\n`"],
+[{"w":1.5},"Tab",{"c":"#aaccaa"},"Home","Up","End","PgUp",{"c":"#cccccc"},"T","Y","BS",{"c":"#cccccc"},"I","O","P","{\n[","}\n]",{"w":1.5},"BS"],
+[{"c":"#aaccaa","w":1.75},"","Left","Down","Right","PgDn",{"c":"#cccccc"},"G",{"c":"#aaccaa"},"Enter","kana",{"c":"#cccccc"},"K","L",":\n;","\"\n'",{"w":2.25},"Return"],
+[{"w":2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{"w":1.75},"Shift",{"c":"#aaccaa"},"",{"c":"#cccccc"}],
+[{"w":1.25},"Ctrl",{"w":1.25},"Opt",{"w":1.25},"Cmd\n\n\n英数",{"a":7,"w":6.25},"6.25u",{"a":4},"Cmd\n\n\nかな","Opt"]
+```
+
+📄 [keyboard-layout-2.rawdata.json](layout/keyboard-layout-2.rawdata.json)
+
+```json
+[{"a":4,"f":3},"Esc",{"c":"#aaccaa"},"F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12",{"c":"#cccccc"},"|\n\\","~\n`"],
+[{"w":1.5},"Tab","Q","W","E","R","T","Y","U","I","O","P",{"c":"#aaccaa"},"Up",{"c":"#cccccc"},"}\n]",{"w":1.5},"BS"],
+[{"c":"#aaccaa","w":1.75},"CapsLock",{"c":"#cccccc"},"A","S","D","F","G","H","J","K","L",{"c":"#aaccaa"},"left","right",{"c":"#cccccc","w":2.25},"Return"],
+[{"w":2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.",{"c":"#aaccaa"},"Down",{"c":"#cccccc","w":1.75},"Shift",{"c":"#aaccaa"},"",{"c":"#cccccc"}],
+[{"w":1.25},"Ctrl",{"w":1.25},"Opt",{"w":1.25},"Cmd\n\n\n英数",{"a":7,"w":6.25},"6.25u",{"a":4},"Cmd\n\n\nかな","Opt"]]
 ```
 
 - 🔗 [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/)

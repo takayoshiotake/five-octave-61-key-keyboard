@@ -1,0 +1,5 @@
+[{"a":4,"f":3},"Esc",{"c":"#aaccaa"},"F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12",{"c":"#cccccc"},"|\n\\","~\n`"],
+[{"w":1.5},"Tab","Q","W","E","R","T","Y","U","I","O","P",{"c":"#aaccaa"},"Up",{"c":"#cccccc"},"}\n]",{"w":1.5},"BS"],
+[{"c":"#aaccaa","w":1.75},"CapsLock",{"c":"#cccccc"},"A","S","D","F","G","H","J","K","L",{"c":"#aaccaa"},"left","right",{"c":"#cccccc","w":2.25},"Return"],
+[{"w":2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.",{"c":"#aaccaa"},"Down",{"c":"#cccccc","w":1.75},"Shift",{"c":"#aaccaa"},"",{"c":"#cccccc"}],
+[{"w":1.25},"Ctrl",{"w":1.25},"Opt",{"w":1.25},"Cmd\n\n\n英数",{"a":7,"w":6.25},"6.25u",{"a":4},"Cmd\n\n\nかな","Opt"]]

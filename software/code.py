@@ -177,7 +177,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.I),
         KeyAssignment(CodeType.KEYBOARD, Keycode.O),
         KeyAssignment(CodeType.KEYBOARD, Keycode.P),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.UP_ARROW),  # LEFT_BRACKET
+        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_BRACKET),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_BRACKET),
         KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSPACE),
         # ROW6 (Layer1)
@@ -185,8 +185,8 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, KeycodeJp.JAPANESE_KANA),  # J
         KeyAssignment(CodeType.KEYBOARD, Keycode.K),
         KeyAssignment(CodeType.KEYBOARD, Keycode.L),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.LEFT_ARROW),  # SEMICOLON
-        KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ARROW),  # QUOTE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.SEMICOLON),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.QUOTE),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RETURN),
         None,  # MO(2)
         # ROW7 (Layer1)
@@ -194,7 +194,7 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.M),
         KeyAssignment(CodeType.KEYBOARD, Keycode.COMMA),
         KeyAssignment(CodeType.KEYBOARD, Keycode.PERIOD),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.DOWN_ARROW),  # FORWARD_SLASH
+        KeyAssignment(CodeType.KEYBOARD, Keycode.FORWARD_SLASH),
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_SHIFT),
         ComplexModifierAssignment(Keycode.RIGHT_GUI, KeycodeJp.JAPANESE_KANA),  # right_command
         KeyAssignment(CodeType.KEYBOARD, Keycode.RIGHT_ALT),  # right_option (tentative))
