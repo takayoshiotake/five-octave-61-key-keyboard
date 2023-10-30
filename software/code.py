@@ -203,12 +203,12 @@ KEY_MAP_LAYERS = [
         # ROW0 (Layer2)
         KeyAssignment(CodeType.KEYBOARD, Keycode.ESCAPE),
         None,
-        KeyAssignment(CodeType.KEYBOARD, Keycode.ONE),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.TWO),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.THREE),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.FOUR),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.FIVE),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.SIX),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F1),  # ONE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F2),  # TWO
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F3),  # THREE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F4),  # FOUR
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F5),  # FIVE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F6),  # SIX
         # ROW1 (Layer2)
         KeyAssignment(CodeType.KEYBOARD, Keycode.TAB),
         None,
@@ -237,12 +237,12 @@ KEY_MAP_LAYERS = [
         KeyAssignment(CodeType.KEYBOARD, Keycode.V),
         KeyAssignment(CodeType.KEYBOARD, Keycode.B),
         # ROW4 (Layer2)
-        KeyAssignment(CodeType.KEYBOARD, Keycode.SEVEN),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.EIGHT),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.NINE),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.ZERO),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.MINUS),
-        KeyAssignment(CodeType.KEYBOARD, Keycode.EQUALS),
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F7),  # SEVEN
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F8),  # EIGHT
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F9),  # NINE
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F10),  # ZERO
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F11),  # MINUS
+        KeyAssignment(CodeType.KEYBOARD, Keycode.F12),  # EQUALS
         KeyAssignment(CodeType.KEYBOARD, Keycode.BACKSLASH),
         KeyAssignment(CodeType.KEYBOARD, Keycode.GRAVE_ACCENT),
         # ROW5 (Layer2)
