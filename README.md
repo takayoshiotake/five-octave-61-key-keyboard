@@ -153,7 +153,7 @@ MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using 
 
 ### Five Octave Enclosure
 
-📄 [Five_Octave_Enclosure.FCStd](mechanics/Five_Octave_Enclosure.FCStd) (v1.0.0)
+📄 [Five_Octave_Enclosure.FCStd](mechanics/Five_Octave_Enclosure.FCStd) (v1.0.1)
 
 ![enclosure png 001](mechanics/Five_Octave_Enclosure-001.png)
 ![enclosure png 002](mechanics/Five_Octave_Enclosure-002.png)
@@ -184,4 +184,4 @@ See [software/README.md](software/README.md) for more details.
 
 ![](photos/overview.jpg)
 
-MEMO: Alminum 6061 CNC + Bead blasting 120-mesh + Anodizing natural-matte by JLCPCB
+MEMO: Alminum 6061 CNC + Bead blasting 120-mesh + Anodizing natural-matte by JLCPCB (Five Octave Enclosure v1.0.0)
