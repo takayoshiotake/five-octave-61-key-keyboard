@@ -23,6 +23,8 @@ class CodeType:
 
 
 class KeycodeJp:
+  JAPANESE_HENKAN = 0x8A  # International4
+  JAPANESE_MUHENKAN = 0x8B  # International5
   JAPANESE_KANA = 0x90  # LANG1
   JAPANESE_EISUU = 0x91  # LANG2
 
