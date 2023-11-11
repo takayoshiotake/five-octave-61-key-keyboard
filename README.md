@@ -158,6 +158,13 @@ MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using 
 ![enclosure png 001](mechanics/Five_Octave_Enclosure-001.png)
 ![enclosure png 002](mechanics/Five_Octave_Enclosure-002.png)
 
+### Five Octave Enclosure v2
+
+📄 [Five_Octave_Enclosure_v2.FCStd](mechanics/Five_Octave_Enclosure_v2.FCStd) (v2.0.0)
+
+![enclosure v2 png 001](mechanics/Five_Octave_Enclosure_v2-001.png)
+![enclosure v2 png 002](mechanics/Five_Octave_Enclosure_v2-002.png)
+
 ### Plate
 
 📄 [Five_Octave_Plate.kicad_pcb](electronics/Five_Octave_Plate/Five_Octave_Plate.kicad_pcb) (v1.0.0)
