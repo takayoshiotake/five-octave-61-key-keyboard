@@ -106,10 +106,10 @@ MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using 
 
 | Material | Symbol | QTY | Note |
 |-|-|-:|-|
-| Five Octave Enclosure - Case || 1 ||
-| Five Octave Enclosure - Top Frame || 1 | |
+| Five Octave Enclosure - Case || 1 | (or Enclosure v2) |
+| Five Octave Enclosure - Top Frame || 1 | (or Enclosure v2) |
 | Screw M2 x 8mm || 4 | Secure Case and Top Frame |
-| Screw M2 x 5mm || 4 | Secure Case and Five Octave MCU |
+| Screw M2 x 5mm or 4mm || 4 | Secure Case and Five Octave MCU |
 | Poron 1.5t 3mm x 120mm || 2 | For gasket mounting |
 | Poron 1.5t 3mm x 60mm || 6 | For gasket mounting |
 | Poron 1.5t 3mm x 40mm || 2 | For gasket mounting |
@@ -189,6 +189,19 @@ See [software/README.md](software/README.md) for more details.
 
 ## Gallery
 
+Keycap: Drop + biip MT3 Extended 2048
+
 ![](photos/overview.jpg)
 
-MEMO: Alminum 6061 CNC + Bead blasting 120-mesh + Anodizing natural-matte by JLCPCB (Five Octave Enclosure v1.0.0)
+MEMO: Alminum 6061 CNC + Bead blasting 120 mesh + Anodizing natural matte by JLCPCB (Five Octave Enclosure v1.0.0)
+
+### Photos with Enclosure v2
+
+Keycap: Drop + biip MT3 Extended 2048
+
+![](photos/v2-001.jpg)
+![](photos/v2-002.jpg)
+![](photos/v2-003.jpg)
+![](photos/v2-004.jpg)
+
+MEMO: Alminum 6061 CNC + Bead blasting 150 mesh + Hardcoat anodizing natural matte by JLCPCB (Five Octave Enclosure v2.1.1)
