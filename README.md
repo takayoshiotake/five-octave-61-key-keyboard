@@ -169,7 +169,16 @@ MEMO: I couldn't figure out how to achieve 'fn' with adafruit_hid, so I'm using 
 
 📄 [Five_Octave_Plate.kicad_pcb](electronics/Five_Octave_Plate/Five_Octave_Plate.kicad_pcb) (v1.0.0)
 
-## Software
+## Firmware
+
+You can use Vial or CircuitPython.
+
+### Vial
+
+- Built UF2
+    - 📄 [takayoshiotake_five_octave_vial_20240103.uf2](vial-bin/takayoshiotake_five_octave_vial_20240103.uf2)
+
+See [vial-porting](vial-porting) for more details.
 
 ### CircuitPython
 
@@ -183,9 +192,7 @@ Its CircuitPython is the same as the one for Octave (<https://github.com/takayos
     - 🔗 [adafruit/circuitpython](https://github.com/adafruit/circuitpython)
         - 🔗 <https://github.com/adafruit/circuitpython/tree/main/ports/raspberrypi/boards/takayoshiotake_octave_rp2040>
 
-### Application Software
-
-See [software/README.md](software/README.md) for more details.
+See [circuitpython-app/README.md](software/README.md) for application software.
 
 ## Gallery
 
