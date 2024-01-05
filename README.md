@@ -2,6 +2,8 @@
 
 A 61-key (5-octave) keyboard.
 
+![](photos/v2-001.jpg)
+
 ## Layout
 
 **Layer 0**:
