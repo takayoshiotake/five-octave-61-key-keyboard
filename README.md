@@ -1,6 +1,6 @@
 # Five Octave
 
-A 61-key (5-octave) keyboard.
+A 61-key (5-octave) keyboard. Powered by [Vial](https://get.vial.today/) firmware.
 
 ![](photos/v2-001.jpg)
 
@@ -179,6 +179,8 @@ You can use Vial or CircuitPython.
 
 - Built UF2
     - 📄 [takayoshiotake_five_octave_vial_20240103.uf2](vial-bin/takayoshiotake_five_octave_vial_20240103.uf2)
+- Code
+    -  🔗 <https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/takayoshiotake/five_octave>
 
 See [vial-porting](vial-porting) for more details.
 
