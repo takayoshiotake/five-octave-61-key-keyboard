@@ -181,6 +181,7 @@ You can use Vial or CircuitPython.
     - 📄 [takayoshiotake_five_octave_vial_20240103.uf2](vial-bin/takayoshiotake_five_octave_vial_20240103.uf2)
 - Code
     -  🔗 <https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/takayoshiotake/five_octave>
+    -  🔗 <https://github.com/vial-kb/vial-qmk/tree/49f5eec0d46f3524850885ffae9dee2982312e50>
 
 See [vial-porting](vial-porting) for more details.
 
